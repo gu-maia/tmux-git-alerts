@@ -20,5 +20,5 @@ fi
 if (( ${#pull_request_array[@]} > 2 )); then
   remaining_count=$(( ${#pull_request_array[@]} - 2 ))
 
-  echo "and $remaining_count more"
+  echo "+($remaining_count)"
 fi
