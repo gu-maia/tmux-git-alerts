@@ -1,10 +1,14 @@
-# How to install
+# tmux-git-alerts
 
-## Requirements
+![image](https://github.com/gu-maia/tmux-git-alerts/assets/19489884/2ccd40d2-5934-40cd-8cb8-3bb589e1e8f5)
+
+## How to install
+
+### Requirements
 
 - Install [GitHub CLI](https://cli.github.com/)
 
-## 📦 Installation
+### 📦 Installation
 
 1. Add `tmux-git-alerts` to your tmux.conf
 
