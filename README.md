@@ -18,7 +18,12 @@ set -g @plugin 'gu-maia/tmux-git-alerts'
 
 2. Hit `prefix + I` to install with TPM
 
-3. run `gh auth login` to authenticate
+3. Define the frequency to pull the Github API
 
+```
+set -g status-interval 60 # for 60 seconds
+```
 
-The plugin is currently in development, the only available command is `prefix + T`, which should print the code reviews requested to you.
+4. run `gh auth login` to authenticate
+
+This is a POC. The code will be refactored and new modules will be added
