@@ -6,6 +6,11 @@ pull_requests=$(gh api -X GET search/issues -f q='is:open review:required user-r
 # Store the pull request numbers in an array
 readarray -t pull_request_array <<< "$pull_requests"
 
+# return if there are no pull requests
+if [[ "${pull_request_array[0]}" == "" ]]; then
+ exit 0
+fi
+
 # Check the length of the pull_request_array
 if (( ${#pull_request_array[@]} == 1 )); then
  # Print the only pull request number
